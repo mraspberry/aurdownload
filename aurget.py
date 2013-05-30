@@ -50,7 +50,7 @@ def worker(workqueue):
         urlparams = {'type' : 'search',
                      'arg' : pkgname,
                     }
-        results = requests.get(url,params=urlparams)
+        results = requests.get(url,params=urlparams,verify=True)
         if results.json()['type'] == 'error':
             lock.acquire() # acquire the lock so we're the only ones printing
             print("No results found for",pkgname)
@@ -67,7 +67,7 @@ def process_results(resultobj,pkgname):
             print("Found",res['Name'],"downloading and extracting the tar archive to the current directory")
             lock.release()
             pkgurl = aurbase + res['URLPath']
-            pkg = requests.get(pkgurl) # downloads the binary file
+            pkg = requests.get(pkgurl,verify=True) # downloads the binary file
             extract_tar(pkg.content)
 
 def extract_tar(tarbytesstream):
