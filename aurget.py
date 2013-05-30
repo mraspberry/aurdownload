@@ -35,10 +35,14 @@ except ImportError:
     print("This script requires the requests library (http://docs.python-requests.org/en/latest/)",file=sys.stderr)
     sys.exit()
 
+__version__='1.0'
+
 global aurbase # just want to be clear what the intention is by declaring these here
 global lock
 aurbase = 'https://aur.archlinux.org'
 lock = Lock()
+
+
 def worker(workqueue):
     while True:
         pkgname = workqueue.get()
@@ -96,5 +100,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="This program downloads and extracts tar archives from the AUR into the current directory")
     parser.add_argument('packages',metavar='packages',nargs='+',help="Package name to search for on the AUR")
     parser.add_argument('-t','--threads',type=int,default=1,help="Number of threads to use (default: 1)")
+    parser.add_argument('-v','--version',action='version',version='%(prog)s 1.0')
     args = parser.parse_args()
     main(args)
