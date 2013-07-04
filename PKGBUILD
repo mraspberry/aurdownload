@@ -11,9 +11,11 @@ source=(
   ${pkgname}_${pkgver}.zip::https://github.com/nixalot/${pkgname}/archive/master.zip
 )
 
-md5sums=('57246d20e6c38064f22294ed2bee5901')
-sha1sums=('ce6833600a32c4c937e54c729bff57a5018581c4')
-sha512sums=('63c2c149df9d5a185f28d351db7072ea8554b7cc3f5454e5aa38653efcb5684dd62665ce03e8728ef08f0681952d317a4fbb7e4aef3311639b9e7fec78a09fdc')
+md5sums=('d4d877efeb3482e0efb7c7b114d2021c')
+sha1sums=('2f4938d896f503ed521b69916c6c6a42d1ec38a6')
+sha256sums=('9c44448ba5a5fdefda8b4a6ec3e4ae8d79b6d5de1a0ea30f82b4001876d3fb1d')
+sha384sums=('ab44d8dc8aaeb3c5cad3fb573ab79bf64ce2a754820be755c6ecafa1251d5a9e1224854b0d109a372dbb684b9f0ad3e9')
+sha512sums=('b2bea526dadc32f8fe326f1b392f91cb1dc8061cb99e45c002f1ef1b66f962efdb4981cf623acf32ae736f1f615b0810ed7433c4d08809463d2f916deebda4f3')
 
 package ()
 {
