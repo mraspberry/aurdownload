@@ -1,4 +1,4 @@
-aurget
+aurdownload
 ======
 
 This script downloads and extract archives from the Arch Linux AUR,
@@ -7,7 +7,7 @@ to use more than 1 thread of execution to get multiple packages faster.
 
 Usage information:
 ------------------
-aurget.py [-h] [-t THREADS] packages [packages ...]
+aurdownload.py [-h] [-t THREADS] packages [packages ...]
                         
 Dependencies:
 -------------

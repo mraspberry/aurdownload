@@ -37,12 +37,12 @@ nosetests.xml
 ## AUR stuff
 # ignore any files in the pkg directory
 # ignore any files in the src directory
-# ignore any aurget_*.zip files
+# ignore any aurdownload_*.zip files
 # ignore any *.tar.xz files
 # ignore the source packages created by "makepkg --source"
 pkg
 src
-aurget_*.zip
+aurdownload_*.zip
 *.tar.xz
 
 *.src.tar.*
