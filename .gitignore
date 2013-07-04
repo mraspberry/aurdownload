@@ -33,3 +33,14 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+## AUR stuff
+# ignore any files in the pkg directory
+# ignore any files in the src directory
+# ignore any aurget_*.zip files
+# ignore any *.tar.xz files
+pkg
+src
+aurget_*.zip
+*.tar.xz
+
