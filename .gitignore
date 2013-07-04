@@ -42,7 +42,7 @@ nosetests.xml
 # ignore the source packages created by "makepkg --source"
 pkg
 src
-aurdownload_*.zip
+aurdownload*.tar.gz
 *.tar.xz
 
 *.src.tar.*

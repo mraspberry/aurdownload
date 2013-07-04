@@ -8,7 +8,7 @@ license=(GPL3)
 url="https://github.com/nixalot/$pkgname"
 depends=('python' 'python-requests')
 source=(
-  ${pkgname}_${pkgver}.zip::https://github.com/nixalot/aurdownload/archive/1.1.tar.gz
+  $pkgname-$pkgver.tar.gz::https://github.com/nixalot/aurdownload/archive/1.1.tar.gz
 )
 
 md5sums=('728f4bfe91227e6c6080b04ad30912d7')
