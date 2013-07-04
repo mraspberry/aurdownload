@@ -1,11 +1,11 @@
 #Maintainer: nixalot <nixalot at nixalot dot com>
 pkgname=aurget
 pkgver=1.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Retrieve and extract PKGBUILDS from the AUR'
 arch=(any)
 license=(GPL3)
-url="https://github.com/nixalot/aurget"
+url="https://github.com/nixalot/$pkgname"
 depends=('python' 'python-requests')
 source=(
   ${pkgname}_${pkgver}.zip::https://github.com/nixalot/${pkgname}/archive/master.zip
