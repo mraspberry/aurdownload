@@ -35,7 +35,7 @@ except ImportError:
     print("This script requires the requests library (http://docs.python-requests.org/en/latest/)",file=sys.stderr)
     sys.exit()
 
-__version__='1.0'
+__version__='1.1'
 
 global aurbase # just want to be clear what the intention is by declaring these here
 global lock
