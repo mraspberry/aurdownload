@@ -1,7 +1,7 @@
 #Maintainer: nixalot <nixalot at nixalot dot com>
 pkgname=aurdownload
 pkgver=1.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Retrieve and extract PKGBUILDS from the AUR'
 arch=(any)
 license=(GPL3)
@@ -11,11 +11,11 @@ source=(
   ${pkgname}_${pkgver}.zip::https://github.com/nixalot/${pkgname}/archive/master.zip
 )
 
-md5sums=('d4d877efeb3482e0efb7c7b114d2021c')
-sha1sums=('2f4938d896f503ed521b69916c6c6a42d1ec38a6')
-sha256sums=('9c44448ba5a5fdefda8b4a6ec3e4ae8d79b6d5de1a0ea30f82b4001876d3fb1d')
-sha384sums=('ab44d8dc8aaeb3c5cad3fb573ab79bf64ce2a754820be755c6ecafa1251d5a9e1224854b0d109a372dbb684b9f0ad3e9')
-sha512sums=('b2bea526dadc32f8fe326f1b392f91cb1dc8061cb99e45c002f1ef1b66f962efdb4981cf623acf32ae736f1f615b0810ed7433c4d08809463d2f916deebda4f3')
+md5sums=('d8c62c601b08e46bf3cafbe3bd9a1ecb')
+sha1sums=('cdb2484b802babe136839dfa3ed55e88b430fdee')
+sha256sums=('91afeed8015e8346c4320258a9dd02ab5680992b03e5d238c55b795178dc8a4c')
+sha384sums=('42f83323f578152ebdde3ebb414f17185796977ed2ae339b3cbaa28c193e536d3dfd4c59c4cdfbbb7ddcddb343bceb92')
+sha512sums=('8c349fcc4ffff9da0930e026fc0b212c1709c6fccef28035dc1c7a49d63bbb01f270ab380c84f524bb53dd474e17acb94ed7a7fdb02354c399f3a90c5865fd34')
 
 package ()
 {
